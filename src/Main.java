@@ -30,7 +30,7 @@ public class Main {
 			BufferedReader socketReader = new BufferedReader(
 					new InputStreamReader(is));
 			
-			while (true) {
+			//while (true) {
 				String input = consoleReader.readLine();
 				System.out.println("send to a server: " + input);
 				
@@ -40,9 +40,9 @@ public class Main {
 				// os.write("Hello".getBytes()); // send data (bytes) to server
 				// os.flush();
 				
-				if ("exit".equals(input)) {
+				/*if ("exit".equals(input)) {
 					break;
-				}
+				}*/
 				
 				String output = socketReader.readLine(); // receive from server
 				System.out.println("receive from a server: " + output);
@@ -50,7 +50,7 @@ public class Main {
 				
 				
 				
-			}
+			//}
 
 			
 
